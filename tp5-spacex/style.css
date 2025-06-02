@@ -1,0 +1,41 @@
+/* Estilo base del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+/* Título centrado */
+h1 {
+  text-align: center;
+}
+
+/* Grilla para mostrar las cards en columnas responsivas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Estilo para cada tarjeta de lanzamiento */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+/* Efecto al pasar el mouse por encima */
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Imagen dentro de la card */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
